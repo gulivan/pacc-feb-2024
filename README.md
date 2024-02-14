@@ -1,0 +1,3 @@
+Activate env:
+
+`pipenv shell`
