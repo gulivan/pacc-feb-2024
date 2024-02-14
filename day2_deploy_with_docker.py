@@ -1,8 +1,8 @@
 from prefect import flow
 
-@flow(log_prints=True)
-def buy(thing: str, price: float):
-    print(f"I just bought a {thing} for {price}$!")
+# @flow(log_prints=True)
+# def buy(thing: str, price: float):
+#     print(f"I just bought a {thing} for {price}$!")
 
 if __name__ == "__main__":
     buy.from_source(
@@ -14,3 +14,5 @@ if __name__ == "__main__":
         image="prefect_certification:1.0",
         push=False,
     )
+
+    # Dockerfile will be generated automatically! You don't have to build it from CLI

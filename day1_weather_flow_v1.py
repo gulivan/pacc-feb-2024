@@ -33,4 +33,4 @@ def fetch_weather (lat: float = 38.9, lon: float = -77.0, target_variable: Varia
     return forecasted_temp
 
 if __name__ == "__main__":
-    fetch_weather.serve(name="deployment_1", cron=SCHEDULE_CRON, parameters=dict(lat=50, lon=77.0))
+    # fetch_weather# .serve(name="deployment_1", cron=SCHEDULE_CRON, parameters=dict(lat=50, lon=77.0))
